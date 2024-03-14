@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "/media/leon/5df3022f-0873-4883-9612-896fd0e2390a/learning/Angular_learning/SuperHeroNg/SuperHeroApi/SuperHeroApi/bin/Debug/net8.0/SuperHeroApi.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "internalConsole"
+        }
+    ]
+}
