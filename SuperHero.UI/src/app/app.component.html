@@ -1,22 +1,10 @@
 
-<button (click)="initNewHero()">Create New Hero</button>
+<h2>Super Heroes Website</h2>
+<div>
+  <nav>
+    <a [routerLink]="['/dashboard']" routerLinkActive="router-link-active">Dashboard</a>
+  </nav>
+</div>
 
-<table>
-  <thead>
-    <th>Name</th>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Place</th>
-  </thead>
-  <tbody>
-    <tr *ngFor="let hero of heroes">
-      <td>{{ hero.name }}</td>
-      <td>{{ hero.firstName }}</td>
-      <td>{{ hero.lastName }}</td>
-      <td>{{ hero.place }}</td>
-      <td><button (click)="editHero(hero)">Edit</button></td>
-    </tr>
-  </tbody>
-</table>
+<router-outlet></router-outlet>
 
-<app-edit-hero [hero]="heroToEdit"></app-edit-hero>
